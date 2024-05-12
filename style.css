@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
 .abel-regular {
   font-family: "Abel", sans-serif;
@@ -19,14 +20,38 @@
   font-size: 20px;
 }
 
+.league-spartan-h2 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 60px;
+  color: white;
+}
+
 body {
   background-color: #1e1e1e;
 }
 
-.btn-primary {
-  background-color: #5f26ff;
+.text-h1 {
+  font-size: 100px;
+  background: linear-gradient(
+    45deg,
+    #4aa9ee 33%,
+    #7bffe7 66%,
+    #bca5ff,
+    #3a28ff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0b2349;
+  display: table;
+  margin: 20px auto;
 }
 
-.row {
-  padding-top: 22px;
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(46, 46, 46, 0.555);
+    backdrop-filter: blur(15px);
+  }
 }
