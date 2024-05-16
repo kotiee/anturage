@@ -55,3 +55,26 @@ body {
     backdrop-filter: blur(15px);
   }
 }
+
+/* Позиционирование изображений */
+.left-img {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 400px; /* Максимальная ширина изображения */
+}
+
+.right-img {
+  right: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  max-width: 400px; /* Максимальная ширина изображения */
+}
+
+/* Для корректного отображения на мобильных устройствах */
+@media (max-width: 768px) {
+  .left-img,
+  .right-img {
+    display: none; /* Скрыть изображения на мобильных устройствах */
+  }
+}
